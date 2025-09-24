@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package fluttercon25.chat;
+
+option go_package = "github.com/ookami-kb/fluttercon25/server/gen/proto";
+
+service ChatService {
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc SendMessage(SendMessageRequest) returns (SendMessageResponse);
+  rpc WatchMessages(WatchMessagesRequest) returns (stream WatchMessagesResponse);
+}
+
+message User {
+  string id = 1;
+  string name = 2;
+  string color = 3;
+}
+
+message Message {
+  string id = 1;
+  string user_id = 2;
+  string user_name = 3;
+  string user_color = 4;
+  string content = 5;
+  int64 timestamp = 6;
+}
+
+message RegisterRequest {
+  string name = 1;
+}
+
+message RegisterResponse {
+  string token = 1;
+  User user = 2;
+}
+
+message SendMessageRequest {
+  string content = 1;
+}
+
+message SendMessageResponse {
+  Message message = 1;
+}
+
+message WatchMessagesRequest {}
+
+message WatchMessagesResponse {
+  Message message = 1;
+}

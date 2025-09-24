@@ -1,0 +1,16 @@
+version: v1
+plugins:
+  - plugin: buf.build/protocolbuffers/go
+    out: server/gen
+    opt: paths=source_relative
+  - plugin: buf.build/connectrpc/go
+    out: server/gen
+    opt: paths=source_relative
+  - plugin: buf.build/protocolbuffers/dart
+    out: client/lib/gen
+  - plugin: buf.build/connectrpc/dart
+    out: client/lib/gen
+  - plugin: buf.build/protocolbuffers/dart
+    out: server_dart/lib/gen
+    opt:
+      - grpc

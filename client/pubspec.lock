@@ -17,6 +17,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.19.1"
+  connectrpc:
+    dependency: "direct main"
+    description:
+      name: connectrpc
+      sha256: a1dbf301d0dfa189bb879a9f15bbe72f31dbac581f385035a10fcc2d31a93a18
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.0"
+  fixnum:
+    dependency: "direct main"
+    description:
+      name: fixnum
+      sha256: b6dc7065e46c974bc7c5f143080a6764ec7a4be6da1285ececdc37be96de53be
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -30,6 +46,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.0.0"
+  http2:
+    dependency: transitive
+    description:
+      name: http2
+      sha256: "382d3aefc5bd6dc68c6b892d7664f29b5beb3251611ae946a98d35158a82bbfa"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.3.1"
   lints:
     dependency: transitive
     description:
@@ -54,6 +78,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.16.0"
+  path:
+    dependency: transitive
+    description:
+      name: path
+      sha256: "75cca69d1490965be98c73ceaea117e8a04dd21217b37b292c9ddbec0d955bc5"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.9.1"
+  protobuf:
+    dependency: "direct main"
+    description:
+      name: protobuf
+      sha256: de9c9eb2c33f8e933a42932fe1dc504800ca45ebc3d673e6ed7f39754ee4053e
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.2.0"
   sky_engine:
     dependency: transitive
     description: flutter

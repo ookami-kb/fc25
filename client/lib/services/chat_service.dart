@@ -1,13 +1,12 @@
-import 'package:fluttercon25_client/services/stub_chat_service.dart';
-
 import '../models/message.dart';
 import '../models/user.dart';
+import 'connect_chat_service.dart';
 
 abstract class ChatService {
   static ChatService? _instance;
 
   factory ChatService() {
-    _instance ??= StubChatService();
+    _instance ??= ConnectChatService(baseUrl: 'http://localhost:8080');
 
     return _instance!;
   }
